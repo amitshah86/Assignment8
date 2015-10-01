@@ -3,7 +3,6 @@
 
 //items.forEach( function (item) {
 // console.log)(item.price);
-});
 
 var prices = items.map ( function (item) {
   return item.price;
@@ -11,13 +10,13 @@ var prices = items.map ( function (item) {
 });
 console.log(prices);
 
-var sum = price.reduce( function (prev, next) {
+var sum = prices.reduce( function (prev, next) {
   return prev + next
 
 });
 console.log(sum);
 
-var avg = sum / item.length;
+var avg = sum / items.length;
 console.log(avg);
 
 // Convert it to 2 decimal places
@@ -32,7 +31,7 @@ console.log(str);
 var answer1 = document.querySelector('#answer1');
 var textNode = document.createTextNode(str);
 
-answer1.appenChild(textNode);
+answer1.appendChild(textNode);
 
 
- })();
+ }());

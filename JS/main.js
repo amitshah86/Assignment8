@@ -37,29 +37,42 @@
  //}());
 
 
-items.forEach(function(item) {
-  console.log(item.price);
+// Question #2
 
-var prices = items.map( function (item) {
-  return item.price;
 
-})
-});
+(function () {
+
+var itemTitle = [];
 
 var merchandise = items.filter( function (beers) {
   if (beers.price > 14 && beers.price < 18){
-  console.log( beers.title)
+    itemTitle.push(beers.title);
+   }
+  });  
+  
+  console.log(itemTitle);
 
+var answer2 = document.querySelector('#answer2');
 
-// var answer2 = document.querySelector('#answer2');
-// var textNode = document.createTextNode(str);
-
-// answer2.appendChild(textNode);
 
  };
- });
 
 
 
 
+
+
+
+// Question #3
+
+(function () {
+
+var itemPrice = [];
+
+var merchItem = items.filter( function (schlitz) {
+  if (schlitz.title = '/xA3') {
+    itemPrice.push(schlitz.title);
+
+  };
+};
 
